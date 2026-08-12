@@ -268,7 +268,7 @@ def level_5(inventory, endings, number, player_name):
                     attempts_finale += 1
                     print(f"TOTAL ATTEMPTS: {attempts_finale}")
 
-            except:
+            except ValueError:
                 print("Sorry that's not valid! ")
         print("You ran out of guesses! The mystery number slips away forever.")
         return "died", inventory
